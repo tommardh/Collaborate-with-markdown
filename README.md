@@ -8,4 +8,5 @@ In order to run this presentation you need reveal-md
 
 ## Run presentation
 
-> reveal-md --separator "^\<\!-- slide --\>\n" --verticalSeparator "^\<\!-- vertical --\>\n" CollaborateWithMarkdown.md
+> reveal-md --separator "^\\<\\!-- slide --\\>\n" --verticalSeparator "^\\<\\!-- vertical --\\>\n" CollaborateWithMarkdown.md
+

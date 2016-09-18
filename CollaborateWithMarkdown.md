@@ -1,12 +1,121 @@
+#Content as Code.
 # Collaborate and focus on content
-using **revel-md**
 
 Magnus Siverbrant & Tom Mårdh
 
 *2016-09-19*
 
+
 <!-- slide -->
 
+## We produce a lot of content!
+
+<!-- slide -->
+
+##Presentations
+![](powerpoint.png)
+
+<!-- slide -->
+
+![](in5.png)
+
+<!-- slide -->
+
+# Whats the problem with this content?
+
+<!-- slide -->
+## Currently
+
+* No version control
+* Content and presentation together
+* Not so collaborative
+* Unclear Ownership
+* Not updated so frequently
+* Hard to find.
+
+
+<!-- slide -->
+
+###Wouldn´t it be great if content could be handled more like code?
+
+
+<!-- slide -->
+
+
+### Hello Markdown!
+    # Hello markdown!
+    
+    * point1
+    * point2
+    * point3
+
+    Lorem ipsum dolor sit amet, ut labitur gloriatur eos, nostro definiebas 
+    reprimique nec ea. Qui ei illum verear. Mei voluptatum appellantur id, 
+
+    ![](powerpoint.png)
+
+
+<!-- slide -->
+
+
+### Hello markdown!
+
+* point1
+* point2
+
+Lorem ipsum dolor sit amet, ut labitur gloriatur eos, nostro definiebas 
+reprimique nec ea. Qui ei illum verear. Mei voluptatum appellantur id, 
+falli forensibus ne eum, sed eu dolores sapientem. At debet disputationi 
+
+![](powerpoint.png)
+
+<!-- slide -->
+
+![](static-site-generator.png)
+
+<!-- slide -->
+
+* Cheap/free hosting
+* No DB
+* Fast as lightning
+* Version control content and presentation together
+* Secure
+* No php
+
+<!-- slide -->
+
+## Docpad
+
+A dynamic static site generator based on node.js
+
+<!-- slide -->
+
+## github.com
+
+[![](github.png)](https://github.com/Softhouse/in5)
+
+<!-- slide -->
+
+## github-pages
+[![](in5-web.png)](http://softhouse.github.io/in5)
+
+<!-- slide -->
+
+## in5 get started
+
+    npm install -g docpad@6.78
+    npm install -g cake
+    git clone https://github.com/Softhouse/in5.git
+    cd in5
+    ./setup
+    docpad run 
+    # Open a browser and go to http://localhost:9778/in5/
+
+<!-- slide -->
+
+## reveal.md 
+
+<!-- slide -->
 ## Agenda
 
 - Why use reveal-md?
@@ -33,34 +142,6 @@ Unlike Powerpoint or Keynote,
 <!-- slide -->
 
 ### Markdown
-
-<!-- vertical -->
-
-#### Template
-
-    # Title
-    
-    ---
-    
-    ## Agenda
-    - Point 1
-    - Point 2
-    
-    ---
-    
-    ### Point 1
-    
-    ----
-    
-    #### Vertical Slide
-    
-    ---
-    
-    ### Point 2
-    
-    ---
-    
-    ## Thanks!
 
 <!-- vertical -->
 
@@ -223,7 +304,7 @@ Next
 
  **Keyword** | **Expansion** 
 -------------|---------------
- .ss | reveal-md --separator "^< !-- slide -->\n" --verticalSeparator "^< !-- vertical -->\n"
+ .ss | reveal-md --separator "^\<\!-- slide -->\n" --verticalSeparator "^\<\!-- vertical -->\n"
  .ns | < !-- slide -->
  .nv | < !-- vertical -->
 
